@@ -4,14 +4,14 @@ const client = new Discord.Client();
 
 
 
-client.login("MzM3Mzk4ODQzNDU4OTc3Nzky.DuXL-w.Ols9w_YdMPK-mYXj0hrzrBSMFNw");
+client.login("MzM3Mzk4ODQzNDU4OTc3Nzky.DwDKhQ.xJW3iixRVelFsq-0cG6GGbMHQ4M");
 
 
 
 
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-  console.log('by safa7');
+  console.log('by BadGuY');
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log(`Logged in as  * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
@@ -49,7 +49,7 @@ client.on('message', message => {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
       message.channel.send(`**✅**`)
   }
-  if (message.content.startsWith('setname')) {
+  if (message.content.startsWith('misetname')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
